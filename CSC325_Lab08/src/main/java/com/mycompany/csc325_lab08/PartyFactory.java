@@ -1,0 +1,29 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.csc325_lab08;
+
+/**
+ *
+ * @author Rsand
+ */
+public class PartyFactory implements ClothingFactory {
+
+    @Override
+    public Tops getTops() {
+        return new PartyShirt();
+    }
+
+    @Override
+    public Pants getPants() {
+        return new PartyPants();
+   }
+
+    @Override
+    public Shoes getShoes() {
+        return new PartyShoes();
+   }
+
+    
+}
