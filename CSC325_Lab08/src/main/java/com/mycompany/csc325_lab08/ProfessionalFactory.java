@@ -9,6 +9,8 @@ package com.mycompany.csc325_lab08;
  * @author Rsand
  */
 public class ProfessionalFactory implements ClothingFactory{
+    
+    //Retreives appropriate classes
 
     @Override
     public Tops getTops() {

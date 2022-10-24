@@ -14,6 +14,7 @@ class Order {
     private Pants pants;
     private Shoes shoes;
     
+    //Gets the correct garments based on the factory passed in
     public Order(ClothingFactory factory){
         tops = factory.getTops();
         pants = factory.getPants();

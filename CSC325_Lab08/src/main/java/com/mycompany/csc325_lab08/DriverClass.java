@@ -1,13 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
- */
-
 package com.mycompany.csc325_lab08;
 
 /**
  *
- * @author Rsand
+ * @author Rafael Sandoval
  */
 public class DriverClass {
     
@@ -16,9 +11,12 @@ public class DriverClass {
         Order order;
         ClothingFactory factory;
         
-        
+       
         String choice = "party";
         
+        //Clothesfactory is an abstract factory
+        //Professional, Party, and Casual factories produce
+        //corresponding garments.
         if(choice=="professional"){
             factory = new ProfessionalFactory();
             order = new Order(factory);
@@ -39,7 +37,6 @@ public class DriverClass {
     public static void main(String[] args) {
         
         Order order = configureOrder();
-        
         order.showOrder();
     }
 }
